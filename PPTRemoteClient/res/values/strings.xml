@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">PPTRemote</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">PPT Remote</string>
+    <string name="title_activity_controller">ControllerActivity</string>
+    <string name="default_file_name">请在PowerPoint中打开文件</string>
+
+</resources>

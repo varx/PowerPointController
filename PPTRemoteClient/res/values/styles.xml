@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light.NoActionBar" />
+    
+    <style name="TextViewFileName" parent="@android:style/TextAppearance.DeviceDefault.Large">
+    </style>
+    
+    <style name="TextViewSlideTitle" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    </style>
+</resources>
