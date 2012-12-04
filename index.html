@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Powerpointcontroller by varx</title>
+    <title>PPTcontroller by varx</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -16,8 +16,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Powerpointcontroller</h1>
-        <p class="header">PowerPoint remote control for android</p>
+        <h1 class="header">PPT Controller</h1>
+        <p class="header">PowerPoint remote control for Android</p>
 
         <ul>
           <li class="download"><a class="buttons" href="https://github.com/varx/PowerPointController/zipball/master">Download ZIP</a></li>
@@ -30,33 +30,31 @@
 
       </header>
       <section>
-        <h3>Welcome to GitHub Pages.</h3>
+        <h3>来源。</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>这是一个毕业设计项目。</p>
+<p>之所以选择Android是因为有技术性的同时又贴近用户，而且门栏低，我不需要装Win8也不需要买台Mac，能跑eclipse买的起破手机就好了。最适合我们这种穷学生=。=</p>
+<p>市场上试用过几款类似的软件，感觉使用麻烦界面粗糙。于是就有了这个DEMO级别的小作品。</p>
+<p>由于不考虑上架，权当毕业找工作凑项目经验用。so细节上没办法有太多精力去修正。罪过。</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h3>功能。</h3>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>服务端是一个PowerPoint插件，启动PowerPoint之后不需要做任何额外的操作。只需像正常那样打开文件即可。</p>
+<p>手机端连接以后会显示PC打开的PPT标题，每页缩略图之类的信息，左右滑动可以翻看。点击右上角开关播放当前页，再点结束播放。</p>
+<p>当然在PC上用鼠标翻页后或者开始、结束播放，手机端也会同步响应状态。</p>
 
-<h3>Designer Templates</h3>
+<h3>截图两枚。</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<img class="capture" src="images/device-2012-12-04-150627.png"/>
 
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+<img class="capture" src="images/device-2012-12-04-150641.png"/>
+<h3>一点点说明。</h3>
+<p>连接后会建立两个TCP连接，一个连接用于发送和接收指令，一个指令长度为一个字节，根据指令不同有带参数和不带参数。另一个连接用于传输图片，手机端发送slide id，PC返回图片。</p>
+<p>PC端用了VSTO（Visual Studio Tools for Office）开发。因为没有把精力反正C#上，所以代码很丑很粗糙。还好跑起来没什么问题。</p>
+<h3>联系。</h3>
+<p>varx(艾特)live.cn</p>
+     
+	 </section>
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
